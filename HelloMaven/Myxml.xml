@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name = "Annotation">
+
+<parameter name ="value1" value="100"/>
+<parameter name ="value2" value="200"/>
+
+		<test name ="Test Annotation" >
+
+	<classes>
+	
+<class name = "selenium.AnnotationSample"/>
+
+	</classes>
+	
+       </test>
+		
+<test name = "Find Element" parallel = "classes">
+	<classes>
+		<class name = "selenium.ClassB"/>
+		<class name = "selenium.ClassA"/>
+	</classes>
+</test>
+<test name = "Alert">
+	<classes>
+	<class name = "selenium.Alertexample"/>
+		</classes>
+		</test>
+</suite>
+
+
+
+
