@@ -18,7 +18,7 @@ public class FacebookLogin {
 		
 		
 		WebDriver driver = ClassDriver.Browser("https://www.facebook.com/");
-		Thread.sleep(3000);
+		
 		File picture = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		File save = new File(System.getProperty("user.dir")+ "/target/"+ "before.jpeg");
 		FileHandler.copy(picture, save);

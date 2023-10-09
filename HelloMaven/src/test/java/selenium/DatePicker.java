@@ -1,5 +1,8 @@
 package selenium;
 
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -14,7 +17,7 @@ public class DatePicker {
 	public void Method() throws Exception {
 		
 		WebDriver driver = ClassDriver.Browser("http://demo.guru99.com/test/");
-		Thread.sleep(3000);
+		
 		WebElement datepicker = driver.findElement(By.xpath("//input[@name='bdaytime']"));
 		
 		datepicker.sendKeys("12/10/1992");
@@ -33,7 +36,6 @@ public class DatePicker {
 				Assert.assertTrue(false);
 			}
 		
-		Thread.sleep(20000);
 		driver.quit();
 	}
 	

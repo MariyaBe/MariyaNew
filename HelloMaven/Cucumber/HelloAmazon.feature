@@ -2,7 +2,7 @@
 @tag
 Feature: Shopping in Amazon
 
-  
+  @amazon1
   Scenario: Log in to Amazon
     Given User is Launching the browser
     And User Navigates to Amazon website
@@ -12,7 +12,7 @@ Feature: Shopping in Amazon
     And User enters valid password
     And User Clicks on signin button
     Then User should be able to verify the name of user in Account&List dropdown
-  
+  @amazon2
   Scenario Outline: Search for items
     Given User Logged in to Amazon
     When User Clicks on search button
@@ -25,7 +25,7 @@ Feature: Shopping in Amazon
 		  | Tshirt|
 		  | Shirt |
 		  
-		  
+	@amazon3	  
 	Scenario: Add to cart button
 		Given User log in to Amazon
 		And User Searched for Items

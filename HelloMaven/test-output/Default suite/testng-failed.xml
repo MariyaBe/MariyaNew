@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="selenium.ClassA">
+      <class name="restAssuredTest.GetTest">
         <methods>
-          <include name="method"/>
+          <include name="postMethod"/>
         </methods>
-      </class> <!-- selenium.ClassA -->
+      </class> <!-- restAssuredTest.GetTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

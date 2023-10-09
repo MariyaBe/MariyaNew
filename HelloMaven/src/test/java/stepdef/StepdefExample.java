@@ -1,10 +1,7 @@
 package stepdef;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
 import io.cucumber.java.en.And;
@@ -18,13 +15,13 @@ public class StepdefExample {
 	 WebDriver driver = null;
 @Given("^User is Launching the browser$")	
 	public void launchedbrowser() {
-     driver = ClassDriver.Browser("https://www.amazon.com/");
+     //driver = ClassDriver.Browser("https://www.amazon.com/");
 
 	System.out.println("inside launched browser method");
 }
 @And("^User Navigates to Amazon website$")
 public void openAmazonWebsite(){
-	driver.get("https://www.amazon.com/");
+//	driver.get("https://www.amazon.com/");
 System.out.println("Inside Open amazon method.");
 
 }
@@ -36,7 +33,7 @@ System.out.println("Inside Open amazon method.");
 }
 @And("^User enters valid username$")
 public void userName() {
-	driver.findElement(By.xpath("//input[@type='email']")).sendKeys("none@gmail.com");	
+	driver.findElement(By.xpath("//input[@type='email']")).sendKeys("none@gmail.com");
 }
 @And("^User Clicks on password textbox$")
 public void passwordTextbox() {

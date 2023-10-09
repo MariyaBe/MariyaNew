@@ -3,13 +3,13 @@
 <suite name="Failed suite [Annotation]" guice-stage="DEVELOPMENT">
   <parameter name="value2" value="200"/>
   <parameter name="value1" value="100"/>
-  <test thread-count="5" name="Alert(failed)">
+  <test thread-count="5" parallel="classes" name="Find Element(failed)">
     <classes>
-      <class name="selenium.Alertexample">
+      <class name="selenium.ClassA">
         <methods>
-          <include name="method1"/>
+          <include name="method"/>
         </methods>
-      </class> <!-- selenium.Alertexample -->
+      </class> <!-- selenium.ClassA -->
     </classes>
-  </test> <!-- Alert(failed) -->
+  </test> <!-- Find Element(failed) -->
 </suite> <!-- Failed suite [Annotation] -->
